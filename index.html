@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daria Koroleva</title>
+    <title data-i18n="page_title_home">Daria Koroleva</title>
     <meta
       name="description"
-      content="Дарья Королёва — бизнес-аналитик, операционные риски Сбера. Управление рисками и цифровым продуктом."
+      content="Daria Koroleva — Business Analyst, Operational Risk at Sber."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,14 +26,15 @@
     <header class="topbar" id="top">
       <a class="brand" href="./index.html">
         <span class="brand-mark">DK</span>
-        <span class="brand-name">daria koroleva</span>
+        <span class="brand-name" data-i18n="brand_name">daria koroleva</span>
       </a>
       <nav class="topbar-nav">
-        <a class="is-current" href="./index.html">home</a>
-        <a href="./work.html">work</a>
-        <a href="./projects.html">projects</a>
-        <a href="./posts.html">posts</a>
-        <a href="#contact">contact</a>
+        <a class="is-current" href="./index.html" data-i18n="nav_home">home</a>
+        <a href="./work.html" data-i18n="nav_work">work</a>
+        <a href="./projects.html" data-i18n="nav_projects">projects</a>
+        <a href="./posts.html" data-i18n="nav_posts">posts</a>
+        <a href="#contact" data-i18n="nav_contact">contact</a>
+        <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch to Russian">ru</button>
       </nav>
     </header>
 
@@ -41,42 +42,43 @@
       <section class="hero hero--portrait section reveal" id="home">
         <div class="portrait-layout">
           <figure class="portrait">
-            <img src="./assets/portrait-placeholder.svg" alt="Портрет Дарьи Королёвой" loading="eager" />
+            <img src="./assets/portrait-placeholder.svg" alt="Daria Koroleva portrait" loading="eager" />
           </figure>
           <div class="portrait-text">
-            <h1 class="portrait-name">Дарья Королёва</h1>
+            <h1 class="portrait-name" data-i18n="hero_name">Daria Koroleva</h1>
             <div class="portrait-bio">
-              <p>
-                Бизнес-аналитик в команде «Риски Технологий» Управления
-                операционных рисков Сбера: работаю с технологическими и
-                операционными инцидентами, формирую бизнес-требования к
-                системам и помогаю выстраивать методологическую базу нового
-                вида риска — «Риск изменений».
+              <p data-i18n="hero_p1">
+                Business Analyst on the "Technology Risks" team at Sber's
+                Operational Risk function — investigating tech and
+                operational incidents, shaping business requirements for
+                systems, and helping build the methodology base for a new
+                risk type, "Change Risk".
               </p>
-              <p>
-                До Сбера два года занималась проектными и операционными
-                рисками в ГТЛК и Банке ДОМ.РФ — от ведения реестров рисков и
-                оценки кредитного риска до утверждения BIA и расследований
-                инцидентов непрерывности деятельности. Раньше — стажировки
-                в Milestone Capital (private equity) и СОГАЗ.
+              <p data-i18n="hero_p2">
+                Before Sber, two years of project and operational risk work
+                at GTLK and DOM.RF Bank — from running risk registers and
+                credit-risk forecasting to approving BIA results and
+                investigating business-continuity incidents. Earlier —
+                private equity at Milestone Capital and an internship at
+                SOGAZ.
               </p>
-              <p>
-                Магистратура НИУ ВШЭ по управлению цифровым продуктом
-                (бизнес-информатика, 2025) и бакалавриат Финансового
-                университета по управлению финансовыми рисками и страхованию
-                (экономика, 2023).
+              <p data-i18n="hero_p3">
+                MSc in Digital Product Management (Business Informatics)
+                from HSE (2025), and a BSc in Financial Risk Management
+                &amp; Insurance (Economics) from the Financial University
+                under the Government of the Russian Federation (2023).
               </p>
-              <p>
-                Помимо работы — большой теннис на призовом уровне
-                (международные и российские турниры), академический вокал,
-                горные лыжи, классическая литература и бег.
+              <p data-i18n="hero_p4">
+                Outside work — competitive tennis (prize winner at
+                international and Russian tournaments), academic vocal
+                training, alpine skiing, classical literature and running.
               </p>
             </div>
             <div class="portrait-links">
-              <a href="./work.html">work</a>
-              <a href="./projects.html">projects</a>
-              <a href="./posts.html">posts</a>
-              <a href="#contact">contact</a>
+              <a href="./work.html" data-i18n="nav_work">work</a>
+              <a href="./projects.html" data-i18n="nav_projects">projects</a>
+              <a href="./posts.html" data-i18n="nav_posts">posts</a>
+              <a href="#contact" data-i18n="nav_contact">contact</a>
             </div>
           </div>
         </div>
@@ -84,12 +86,12 @@
     </main>
 
     <footer class="footer section reveal" id="contact">
-      <p class="eyebrow">contact</p>
-      <h2>Get in touch</h2>
+      <p class="eyebrow" data-i18n="contact_eyebrow">contact</p>
+      <h2 data-i18n="contact_title">Get in touch</h2>
       <div class="contact-links">
         <a href="mailto:chyba991@gmail.com">chyba991@gmail.com</a>
-        <a href="tel:+79032055087">+7 903 205 50 87</a>
-        <a href="./assets/cv-daria-koroleva-2026.pdf" target="_blank" rel="noreferrer">cv pdf</a>
+        <a href="https://t.me/DarKoroleva" target="_blank" rel="noreferrer">@DarKoroleva</a>
+        <a href="./assets/cv-daria-koroleva-2026.pdf" target="_blank" rel="noreferrer" data-i18n="contact_cv">cv pdf</a>
       </div>
     </footer>
 

@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daria Koroleva | Work</title>
+    <title data-i18n="page_title_work">Daria Koroleva | Work</title>
     <meta
       name="description"
-      content="Опыт, образование и навыки — Дарья Королёва."
+      content="Experience, education and skills — Daria Koroleva."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,14 +26,15 @@
     <header class="topbar" id="top">
       <a class="brand" href="./index.html">
         <span class="brand-mark">DK</span>
-        <span class="brand-name">daria koroleva</span>
+        <span class="brand-name" data-i18n="brand_name">daria koroleva</span>
       </a>
       <nav class="topbar-nav">
-        <a href="./index.html">home</a>
-        <a class="is-current" href="./work.html">work</a>
-        <a href="./projects.html">projects</a>
-        <a href="./posts.html">posts</a>
-        <a href="./index.html#contact">contact</a>
+        <a href="./index.html" data-i18n="nav_home">home</a>
+        <a class="is-current" href="./work.html" data-i18n="nav_work">work</a>
+        <a href="./projects.html" data-i18n="nav_projects">projects</a>
+        <a href="./posts.html" data-i18n="nav_posts">posts</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">contact</a>
+        <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch to Russian">ru</button>
       </nav>
     </header>
 
@@ -45,58 +46,39 @@
             href="./assets/cv-daria-koroleva-2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="cv_button"
           >
-            скачать резюме
+            download my cv
           </a>
           <div class="contact-links cv-banner-contacts">
-            <a href="mailto:chyba991@gmail.com">email</a>
-            <a href="tel:+79032055087">+7 903 205 50 87</a>
+            <a href="mailto:chyba991@gmail.com">chyba991@gmail.com</a>
+            <a href="https://t.me/DarKoroleva" target="_blank" rel="noreferrer">@DarKoroleva</a>
           </div>
         </div>
 
         <div class="section-head">
-          <p class="eyebrow">опыт</p>
-          <h2>Где я работала</h2>
+          <p class="eyebrow" data-i18n="work_exp_eyebrow">experience</p>
+          <h2 data-i18n="work_exp_title">Where I have worked</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item">
-            <p class="timeline-date">АПР 2024 — Н.В.</p>
+            <p class="timeline-date" data-i18n="work_sber_date">APR 2024 — PRESENT</p>
             <div>
-              <h3>АО «Сбер»</h3>
-              <p class="timeline-meta">Full-time · Москва</p>
+              <h3 data-i18n="work_sber_company">Sber</h3>
+              <p class="timeline-meta" data-i18n="work_sber_meta">Full-time · Moscow, Russia</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>Бизнес-аналитик — Управление операционных рисков, команда «Риски Технологий»</h4>
-                  <p>Апр 2024 — наст. время</p>
+                  <h4 data-i18n="work_sber_role">Business Analyst — Operational Risk, "Technology Risks" team</h4>
+                  <p data-i18n="work_sber_period">Apr 2024 — Present</p>
                   <ul>
-                    <li>
-                      Анализ технологических ИТ-инцидентов и инцидентов
-                      операционного риска: выявление причин и расследования,
-                      работа в Service Manager.
-                    </li>
-                    <li>
-                      Формирование бизнес-требований к системам, описание
-                      бизнес-процессов; понимание продуктового цикла.
-                    </li>
-                    <li>
-                      Релизный и производственный процесс, участие в
-                      построении управления изменениями.
-                    </li>
-                    <li>
-                      Сбор потребностей внутренних пользователей,
-                      взаимодействие с кросс-функциональными командами (ИТ,
-                      продукт, бизнес).
-                    </li>
-                    <li>
-                      Аналитика и координация проекта с AI-моделью
-                      (Сканер-моделей).
-                    </li>
-                    <li>
-                      Участие в выстраивании методологической базы нового
-                      вида риска — «Риск изменений».
-                    </li>
-                    <li>Jira / Confluence для постановки задач, документации и сопровождения проектов.</li>
+                    <li data-i18n="work_sber_b1">Analysed IT and operational risk incidents, investigated root causes, worked in Service Manager.</li>
+                    <li data-i18n="work_sber_b2">Drafted business requirements for systems and described business processes; participated in the full product cycle.</li>
+                    <li data-i18n="work_sber_b3">Took part in release and production processes and in building change-management procedures.</li>
+                    <li data-i18n="work_sber_b4">Gathered needs from internal users; collaborated with cross-functional teams (IT, product, business).</li>
+                    <li data-i18n="work_sber_b5">Coordinated analytics on the AI-model project ("Model Scanner").</li>
+                    <li data-i18n="work_sber_b6">Helped shape the methodology base for a new risk type — "Change Risk".</li>
+                    <li data-i18n="work_sber_b7">Used Jira and Confluence to track tasks, maintain documentation and run projects.</li>
                   </ul>
                 </article>
               </div>
@@ -104,29 +86,18 @@
           </article>
 
           <article class="timeline-item">
-            <p class="timeline-date">ИЮЛ 2023 — АПР 2024</p>
+            <p class="timeline-date" data-i18n="work_gtlk_date">JUL 2023 — APR 2024</p>
             <div>
-              <h3>АО «ГТЛК»</h3>
-              <p class="timeline-meta">Full-time · ~10 мес · Москва</p>
+              <h3 data-i18n="work_gtlk_company">GTLK</h3>
+              <p class="timeline-meta" data-i18n="work_gtlk_meta">Full-time · ~10 mos · Moscow</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>Главный специалист — Дирекция по управлению рисками</h4>
-                  <p>Июл 2023 — Апр 2024</p>
+                  <h4 data-i18n="work_gtlk_role">Lead Specialist — Risk Management Directorate</h4>
+                  <p data-i18n="work_gtlk_period">Jul 2023 — Apr 2024</p>
                   <ul>
-                    <li>
-                      Управление проектными рисками государственных программ
-                      развития лизинга: реестр рисков, оценка проектных
-                      рисков, контроль выполнения минимизирующих и
-                      контрольных мероприятий.
-                    </li>
-                    <li>
-                      Оценка кредитного риска: построение прогноза
-                      дебиторской задолженности по клиентам.
-                    </li>
-                    <li>
-                      Оценка финансовых рисков: достаточность средств для
-                      исполнения государственных программ.
-                    </li>
+                    <li data-i18n="work_gtlk_b1">Managed project risks for state leasing development programs: risk register, project-risk assessment, monitoring of mitigation and control actions.</li>
+                    <li data-i18n="work_gtlk_b2">Assessed credit risk by forecasting client receivables.</li>
+                    <li data-i18n="work_gtlk_b3">Assessed financial risk: funding adequacy for state programs.</li>
                   </ul>
                 </article>
               </div>
@@ -134,47 +105,29 @@
           </article>
 
           <article class="timeline-item">
-            <p class="timeline-date">АПР 2022 — ИЮЛ 2023</p>
+            <p class="timeline-date" data-i18n="work_dom_date">APR 2022 — JUL 2023</p>
             <div>
-              <h3>АО «Банк ДОМ.РФ» · АО «ДОМ.РФ»</h3>
-              <p class="timeline-meta">Full-time · 1 г 4 мес · Москва</p>
+              <h3 data-i18n="work_dom_company">DOM.RF Bank · DOM.RF</h3>
+              <p class="timeline-meta" data-i18n="work_dom_meta">Full-time · 1 yr 4 mos · Moscow</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>Ведущий специалист — Операционные риски и восстановление деятельности (Банк ДОМ.РФ)</h4>
-                  <p>Июл 2022 — Июл 2023 · 1 г</p>
+                  <h4 data-i18n="work_dom_role1">Lead Specialist — Operational Risk and Business Continuity (DOM.RF Bank)</h4>
+                  <p data-i18n="work_dom_period1">Jul 2022 — Jul 2023 · 1 yr</p>
                   <ul>
-                    <li>
-                      Утверждение результатов Business Impact Analysis (BIA)
-                      на Комитете по рискам по всем подразделениям.
-                    </li>
-                    <li>
-                      Расследование инцидентов непрерывности деятельности /
-                      ИТ / ИБ, событий операционного риска, работа с рисками.
-                    </li>
-                    <li>
-                      Анализ требований Банка России по операционной
-                      надёжности; подготовка отчётов о технических сбоях.
-                    </li>
+                    <li data-i18n="work_dom_b11">Approved Business Impact Analysis (BIA) results at the Risk Committee for all units.</li>
+                    <li data-i18n="work_dom_b12">Investigated business-continuity / IT / IS incidents and operational-risk events.</li>
+                    <li data-i18n="work_dom_b13">Analysed Bank of Russia operational-resilience requirements; prepared reports on technical incidents.</li>
                   </ul>
                 </article>
 
                 <article class="timeline-role">
-                  <h4>Стажёр-специалист — Операционные риски (ДОМ.РФ)</h4>
-                  <p>Апр 2022 — Июл 2022 · 4 мес</p>
+                  <h4 data-i18n="work_dom_role2">Intern Specialist — Operational Risk (DOM.RF)</h4>
+                  <p data-i18n="work_dom_period2">Apr 2022 — Jul 2022 · 4 mos</p>
                   <ul>
-                    <li>
-                      Обработка массива данных: план закупок, режимы работы
-                      сотрудников, критичные доступы.
-                    </li>
-                    <li>
-                      Анализ положений Банка России по операционной
-                      надёжности (716-П, 787-П, 779-П).
-                    </li>
-                    <li>
-                      Подготовка данных для BIA — анализ более 600
-                      бизнес-процессов.
-                    </li>
-                    <li>Анализ инцидентов ИБ на соответствие требованиям операционного риска.</li>
+                    <li data-i18n="work_dom_b21">Processed large data sets: procurement plan, staff schedules, critical access rights.</li>
+                    <li data-i18n="work_dom_b22">Analysed Bank of Russia operational-resilience regulations (716-P, 787-P, 779-P).</li>
+                    <li data-i18n="work_dom_b23">Prepared data for BIA — over 600 business processes analysed.</li>
+                    <li data-i18n="work_dom_b24">Reviewed information-security incidents for compliance with operational-risk events.</li>
                   </ul>
                 </article>
               </div>
@@ -182,35 +135,25 @@
           </article>
 
           <article class="timeline-item">
-            <p class="timeline-date">2021</p>
+            <p class="timeline-date" data-i18n="work_2021_date">2021</p>
             <div>
-              <h3>Milestone Capital · АО «СОГАЗ»</h3>
-              <p class="timeline-meta">Стажировки · 2021</p>
+              <h3 data-i18n="work_2021_company">Milestone Capital · SOGAZ</h3>
+              <p class="timeline-meta" data-i18n="work_2021_meta">Internships · 2021</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>Private Equity Analyst — Milestone Capital</h4>
-                  <p>Ноя 2021 — Мар 2022</p>
+                  <h4 data-i18n="work_milestone_role">Private Equity Analyst — Milestone Capital</h4>
+                  <p data-i18n="work_milestone_period">Nov 2021 — Mar 2022</p>
                   <ul>
-                    <li>
-                      Работа с базами данных при анализе компаний; фокус на
-                      бизнесы с recurring revenue.
-                    </li>
-                    <li>Подготовка тизеров и кратких обзоров CIM.</li>
-                    <li>
-                      Анализ финансовой отчётности, построение финансовой
-                      модели, отраслевые исследования.
-                    </li>
+                    <li data-i18n="work_milestone_b1">Worked with databases to analyse companies, focused on businesses with recurring revenue.</li>
+                    <li data-i18n="work_milestone_b2">Prepared teasers and short CIM summaries.</li>
+                    <li data-i18n="work_milestone_b3">Analysed financial statements, built financial models and ran industry research.</li>
                   </ul>
                 </article>
-
                 <article class="timeline-role">
-                  <h4>Стажёр — Отдел урегулирования имущественных убытков физических лиц (СОГАЗ)</h4>
-                  <p>Июл 2021 — Ноя 2021</p>
+                  <h4 data-i18n="work_sogaz_role">Intern — Property Claims, Individuals (SOGAZ)</h4>
+                  <p data-i18n="work_sogaz_period">Jul 2021 — Nov 2021</p>
                   <ul>
-                    <li>
-                      Анализ документации, формирование архива,
-                      структурирование данных для дальнейшего использования.
-                    </li>
+                    <li data-i18n="work_sogaz_b1">Reviewed documents, organised the archive, structured data for later use.</li>
                   </ul>
                 </article>
               </div>
@@ -221,49 +164,38 @@
 
       <section class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">образование</p>
-          <h2>Education</h2>
+          <p class="eyebrow" data-i18n="edu_eyebrow">education</p>
+          <h2 data-i18n="edu_title">Education</h2>
         </div>
         <div class="section-split">
           <article class="panel">
-            <p class="eyebrow">2023 — 2025</p>
-            <h3>Магистратура · НИУ ВШЭ</h3>
-            <p>
-              Управление цифровым продуктом, направление «Бизнес-информатика».
-            </p>
+            <p class="eyebrow" data-i18n="edu_msc_period">2023 — 2025</p>
+            <h3 data-i18n="edu_msc_h">MSc · HSE</h3>
+            <p data-i18n="edu_msc_p">Digital Product Management, Business Informatics.</p>
           </article>
           <article class="panel">
-            <p class="eyebrow">2019 — 2023</p>
-            <h3>Бакалавриат · Финансовый университет</h3>
-            <p>
-              Управление финансовыми рисками и страхование, направление
-              «Экономика».
-            </p>
+            <p class="eyebrow" data-i18n="edu_bsc_period">2019 — 2023</p>
+            <h3 data-i18n="edu_bsc_h">BSc · Financial University</h3>
+            <p data-i18n="edu_bsc_p">Financial Risk Management &amp; Insurance, Economics.</p>
           </article>
         </div>
       </section>
 
       <section class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">навыки и языки</p>
-          <h2>Skills &amp; languages</h2>
+          <p class="eyebrow" data-i18n="skills_eyebrow">skills &amp; languages</p>
+          <h2 data-i18n="skills_title">Skills &amp; languages</h2>
         </div>
         <div class="section-split">
           <article class="panel">
-            <p class="eyebrow">tools</p>
-            <h3>Jira · Confluence · SQL</h3>
-            <p>
-              Описание бизнес-процессов, работа с инцидентами, управление
-              изменениями, базовые знания об архитектуре моделей и
-              ИТ-систем, product mindset, системное мышление.
-            </p>
+            <p class="eyebrow" data-i18n="skills_tools_eyebrow">tools</p>
+            <h3 data-i18n="skills_tools_h">Jira · Confluence · SQL</h3>
+            <p data-i18n="skills_tools_p">Business-process design, incident handling, change management, basics of model and IT-system architecture, product mindset, systems thinking.</p>
           </article>
           <article class="panel">
-            <p class="eyebrow">languages</p>
-            <h3>Русский · Английский (B1)</h3>
-            <p>
-              Русский — родной, английский — Intermediate (B1).
-            </p>
+            <p class="eyebrow" data-i18n="skills_lang_eyebrow">languages</p>
+            <h3 data-i18n="skills_lang_h">Russian · English (B1)</h3>
+            <p data-i18n="skills_lang_p">Russian — native, English — Intermediate (B1).</p>
           </article>
         </div>
       </section>

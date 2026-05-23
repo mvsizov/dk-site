@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daria Koroleva | Posts</title>
+    <title data-i18n="page_title_posts">Daria Koroleva | Posts</title>
     <meta
       name="description"
-      content="Записи и ссылки Дарьи Королёвой."
+      content="Notes and links by Daria Koroleva."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,28 +26,29 @@
     <header class="topbar" id="top">
       <a class="brand" href="./index.html">
         <span class="brand-mark">DK</span>
-        <span class="brand-name">daria koroleva</span>
+        <span class="brand-name" data-i18n="brand_name">daria koroleva</span>
       </a>
       <nav class="topbar-nav">
-        <a href="./index.html">home</a>
-        <a href="./work.html">work</a>
-        <a href="./projects.html">projects</a>
-        <a class="is-current" href="./posts.html">posts</a>
-        <a href="./index.html#contact">contact</a>
+        <a href="./index.html" data-i18n="nav_home">home</a>
+        <a href="./work.html" data-i18n="nav_work">work</a>
+        <a href="./projects.html" data-i18n="nav_projects">projects</a>
+        <a class="is-current" href="./posts.html" data-i18n="nav_posts">posts</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">contact</a>
+        <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch to Russian">ru</button>
       </nav>
     </header>
 
     <main>
       <section class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">posts</p>
-          <h2>Заметки, ссылки, публикации</h2>
+          <p class="eyebrow" data-i18n="posts_eyebrow">posts</p>
+          <h2 data-i18n="posts_title">Notes, links, publications</h2>
         </div>
 
         <div class="filter-bar" role="tablist" aria-label="Filter posts by source">
-          <button type="button" class="filter-chip is-active" data-filter="all">all</button>
-          <button type="button" class="filter-chip" data-filter="telegram">Telegram</button>
-          <button type="button" class="filter-chip" data-filter="article">Article</button>
+          <button type="button" class="filter-chip is-active" data-filter="all" data-i18n="posts_filter_all">all</button>
+          <button type="button" class="filter-chip" data-filter="telegram" data-i18n="posts_filter_telegram">Telegram</button>
+          <button type="button" class="filter-chip" data-filter="article" data-i18n="posts_filter_article">Article</button>
         </div>
 
         <div class="post-list" id="post-list">
@@ -55,11 +56,8 @@
         </div>
 
         <div class="empty-state" id="post-empty">
-          <p class="eyebrow">work in progress</p>
-          <p class="empty-copy">
-            Записи появятся здесь — короткие заметки и ссылки на статьи и
-            публикации.
-          </p>
+          <p class="eyebrow" data-i18n="posts_empty_eyebrow">work in progress</p>
+          <p class="empty-copy" data-i18n="posts_empty_copy">Notes will appear here — short posts with links to articles and publications.</p>
         </div>
       </section>
     </main>

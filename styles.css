@@ -131,6 +131,28 @@ p {
   color: var(--ink);
 }
 
+.lang-toggle {
+  margin-left: 0.4rem;
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--ink);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.32rem 0.55rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 170ms ease, border-color 170ms ease;
+  min-width: 2.1rem;
+  line-height: 1;
+}
+
+.lang-toggle:hover {
+  transform: translateY(-1px);
+  border-color: #0f1218;
+}
+
 main,
 .footer {
   width: min(1140px, 94vw);
