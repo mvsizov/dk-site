@@ -1,59 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dummy Site</title>
+    <title>Daria Koroleva</title>
     <meta
       name="description"
-      content="Простой dummy-сайт для быстрого деплоя через GitHub Pages."
+      content="Дарья Королёва — бизнес-аналитик, операционные риски Сбера. Управление рисками и цифровым продуктом."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
-        <p class="eyebrow">GitHub Pages Demo</p>
-        <h1>Очень простой dummy site</h1>
-        <p class="lead">
-          Заглушка для тестового деплоя. Можно сразу заливать в репозиторий и
-          публиковать как статический сайт без сборки.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="mailto:hello@example.com">Написать</a>
-          <a class="button secondary" href="#about">Что внутри</a>
+    <div class="noise-overlay"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="topbar" id="top">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">DK</span>
+        <span class="brand-name">daria koroleva</span>
+      </a>
+      <nav class="topbar-nav">
+        <a class="is-current" href="./index.html">home</a>
+        <a href="./work.html">work</a>
+        <a href="./projects.html">projects</a>
+        <a href="./posts.html">posts</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--portrait section reveal" id="home">
+        <div class="portrait-layout">
+          <figure class="portrait">
+            <img src="./assets/portrait-placeholder.svg" alt="Портрет Дарьи Королёвой" loading="eager" />
+          </figure>
+          <div class="portrait-text">
+            <h1 class="portrait-name">Дарья Королёва</h1>
+            <div class="portrait-bio">
+              <p>
+                Бизнес-аналитик в команде «Риски Технологий» Управления
+                операционных рисков Сбера: работаю с технологическими и
+                операционными инцидентами, формирую бизнес-требования к
+                системам и помогаю выстраивать методологическую базу нового
+                вида риска — «Риск изменений».
+              </p>
+              <p>
+                До Сбера два года занималась проектными и операционными
+                рисками в ГТЛК и Банке ДОМ.РФ — от ведения реестров рисков и
+                оценки кредитного риска до утверждения BIA и расследований
+                инцидентов непрерывности деятельности. Раньше — стажировки
+                в Milestone Capital (private equity) и СОГАЗ.
+              </p>
+              <p>
+                Магистратура НИУ ВШЭ по управлению цифровым продуктом
+                (бизнес-информатика, 2025) и бакалавриат Финансового
+                университета по управлению финансовыми рисками и страхованию
+                (экономика, 2023).
+              </p>
+              <p>
+                Помимо работы — большой теннис на призовом уровне
+                (международные и российские турниры), академический вокал,
+                горные лыжи, классическая литература и бег.
+              </p>
+            </div>
+            <div class="portrait-links">
+              <a href="./work.html">work</a>
+              <a href="./projects.html">projects</a>
+              <a href="./posts.html">posts</a>
+              <a href="#contact">contact</a>
+            </div>
+          </div>
         </div>
-      </section>
-
-      <section class="grid" id="about">
-        <article class="card">
-          <h2>Быстрый старт</h2>
-          <p>
-            Сайт работает как есть: корневой <code>index.html</code>, отдельные
-            стили и никаких зависимостей.
-          </p>
-        </article>
-
-        <article class="card">
-          <h2>Под GitHub Pages</h2>
-          <p>
-            Подходит для публикации из ветки <code>main</code> прямо из корня
-            репозитория.
-          </p>
-        </article>
-
-        <article class="card">
-          <h2>Легко заменить</h2>
-          <p>
-            Тексты, ссылки и цвета вынесены максимально просто, чтобы быстро
-            переделать под себя.
-          </p>
-        </article>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>© 2026 Dummy Site</p>
+    <footer class="footer section reveal" id="contact">
+      <p class="eyebrow">contact</p>
+      <h2>Get in touch</h2>
+      <div class="contact-links">
+        <a href="mailto:chyba991@gmail.com">chyba991@gmail.com</a>
+        <a href="tel:+79032055087">+7 903 205 50 87</a>
+        <a href="./assets/cv-daria-koroleva-2026.pdf" target="_blank" rel="noreferrer">cv pdf</a>
+      </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
