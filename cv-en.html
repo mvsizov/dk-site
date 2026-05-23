@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Daria Koroleva — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root {
+    --ink: #0b0d14;
+    --muted: #5a6772;
+    --line: #e6ebf1;
+    --line-strong: #d5dbe5;
+    --accent: #0b0d14;
+  }
+  @page { size: A4; margin: 14mm 14mm; }
+  * { box-sizing: border-box; }
+  html, body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    color: var(--ink);
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .accent-bar { height: 3px; background: var(--ink); width: 64px; margin: 0 0 14px 0; }
+  header.cv {
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .cv-name {
+    font-size: 28pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    margin: 0 0 4px 0;
+  }
+  .cv-tagline {
+    font-size: 11pt;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .cv-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .cv-contacts span::before { content: ""; }
+  .cv-contacts .label {
+    color: var(--muted);
+    margin-right: 4px;
+  }
+  section.cv-section { margin-top: 16px; }
+  h2.cv-section-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin: 0 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--line);
+    font-weight: 500;
+  }
+  .cv-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 14px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+  .cv-period {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-top: 2px;
+  }
+  .cv-company {
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 1px;
+  }
+  .cv-role {
+    font-size: 9.5pt;
+    color: var(--ink);
+    font-weight: 500;
+    margin: 2px 0 4px 0;
+  }
+  .cv-sub-period {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 3px;
+  }
+  ul.cv-bullets {
+    margin: 4px 0 6px 0;
+    padding-left: 14px;
+    color: var(--ink);
+  }
+  ul.cv-bullets li {
+    margin-bottom: 2px;
+    font-size: 9.2pt;
+  }
+  .cv-role-block { margin-bottom: 8px; }
+  .cv-role-block:last-child { margin-bottom: 0; }
+  .cv-skills-grid {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+  .cv-skills-grid .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-top: 2px;
+  }
+  .cv-interests {
+    color: var(--ink);
+    font-size: 9.5pt;
+  }
+</style>
+</head>
+<body>
+
+<header class="cv">
+  <div class="accent-bar"></div>
+  <div class="cv-name">Daria Koroleva</div>
+  <div class="cv-tagline">Business Analyst · Operational Risk · Sber</div>
+  <div class="cv-contacts">
+    <span><span class="label">email</span>chyba991@gmail.com</span>
+    <span><span class="label">telegram</span>@DarKoroleva</span>
+    <span><span class="label">web</span>dkoroleva.com</span>
+  </div>
+</header>
+
+<section class="cv-section">
+  <h2 class="cv-section-title">Experience</h2>
+
+  <div class="cv-item">
+    <div class="cv-period">Apr 2024 —<br/>Present</div>
+    <div>
+      <div class="cv-company">Sber</div>
+      <div class="cv-role">Business Analyst — Operational Risk, “Technology Risks” team</div>
+      <ul class="cv-bullets">
+        <li>Analysed IT and operational-risk incidents, investigated root causes, worked in Service Manager.</li>
+        <li>Drafted business requirements for systems and described business processes; participated in the full product cycle.</li>
+        <li>Took part in release / production processes and helped build change-management procedures.</li>
+        <li>Gathered needs from internal users; collaborated with cross-functional teams (IT, product, business).</li>
+        <li>Coordinated analytics on the AI-model project (“Model Scanner”).</li>
+        <li>Helped shape the methodology base for a new risk type — “Change Risk”.</li>
+        <li>Used Jira and Confluence to track tasks, maintain documentation and run projects.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-period">Jul 2023 —<br/>Apr 2024</div>
+    <div>
+      <div class="cv-company">GTLK</div>
+      <div class="cv-role">Lead Specialist — Risk Management Directorate</div>
+      <ul class="cv-bullets">
+        <li>Managed project risks for state leasing-development programs: risk register, project-risk assessment, monitoring of mitigation and control actions.</li>
+        <li>Assessed credit risk by forecasting client receivables.</li>
+        <li>Assessed financial risk: funding adequacy for state programs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-period">Apr 2022 —<br/>Jul 2023</div>
+    <div>
+      <div class="cv-company">DOM.RF Bank · DOM.RF</div>
+
+      <div class="cv-role-block">
+        <div class="cv-role">Lead Specialist — Operational Risk &amp; Business Continuity (DOM.RF Bank)</div>
+        <div class="cv-sub-period">Jul 2022 — Jul 2023 · 1 yr</div>
+        <ul class="cv-bullets">
+          <li>Approved Business Impact Analysis (BIA) results at the Risk Committee for all units.</li>
+          <li>Investigated business-continuity / IT / IS incidents and operational-risk events.</li>
+          <li>Analysed Bank of Russia operational-resilience requirements; prepared reports on technical incidents.</li>
+        </ul>
+      </div>
+
+      <div class="cv-role-block">
+        <div class="cv-role">Intern Specialist — Operational Risk (DOM.RF)</div>
+        <div class="cv-sub-period">Apr 2022 — Jul 2022 · 4 mos</div>
+        <ul class="cv-bullets">
+          <li>Processed large data sets: procurement plan, staff schedules, critical access rights.</li>
+          <li>Analysed Bank of Russia operational-resilience regulations (716-P, 787-P, 779-P).</li>
+          <li>Prepared data for BIA — over 600 business processes analysed.</li>
+          <li>Reviewed information-security incidents for compliance with operational-risk events.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-period">2021</div>
+    <div>
+      <div class="cv-company">Milestone Capital · SOGAZ</div>
+
+      <div class="cv-role-block">
+        <div class="cv-role">Private Equity Analyst — Milestone Capital</div>
+        <div class="cv-sub-period">Nov 2021 — Mar 2022</div>
+        <ul class="cv-bullets">
+          <li>Worked with databases to analyse companies, focused on businesses with recurring revenue.</li>
+          <li>Prepared teasers and short CIM summaries.</li>
+          <li>Analysed financial statements, built financial models and ran industry research.</li>
+        </ul>
+      </div>
+
+      <div class="cv-role-block">
+        <div class="cv-role">Intern — Property Claims, Individuals (SOGAZ)</div>
+        <div class="cv-sub-period">Jul 2021 — Nov 2021</div>
+        <ul class="cv-bullets">
+          <li>Reviewed documents, organised the archive, structured data for later use.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2 class="cv-section-title">Education</h2>
+  <div class="cv-item">
+    <div class="cv-period">2023 — 2025</div>
+    <div>
+      <div class="cv-company">HSE</div>
+      <div class="cv-role">MSc, Digital Product Management — Business Informatics</div>
+    </div>
+  </div>
+  <div class="cv-item">
+    <div class="cv-period">2019 — 2023</div>
+    <div>
+      <div class="cv-company">Financial University under the Government of the Russian Federation</div>
+      <div class="cv-role">BSc, Financial Risk Management &amp; Insurance — Economics</div>
+    </div>
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2 class="cv-section-title">Research &amp; programs</h2>
+  <ul class="cv-bullets">
+    <li>Publication — “Impact of the pandemic on aviation: aircraft leasing through the GTLK case”.</li>
+    <li>Publication — “Realising mortgage potential in the monetary digital era”.</li>
+    <li>Publication — “Convergence of insurance and banking products”.</li>
+    <li>VTB Risk Management School (ShUR) · KPMG Audit Week Online.</li>
+    <li>Changellenge The Cup of Moscow, Russia 2020 — TOP-25% finalist.</li>
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2 class="cv-section-title">Skills &amp; languages</h2>
+  <div class="cv-skills-grid">
+    <div class="label">tools</div>
+    <div>Jira · Confluence · SQL · business-process design · incident handling · change management · basics of model and IT-system architecture · product mindset · systems thinking.</div>
+  </div>
+  <div class="cv-skills-grid">
+    <div class="label">languages</div>
+    <div>Russian — native · English — B1 (Intermediate).</div>
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2 class="cv-section-title">Interests</h2>
+  <div class="cv-interests">
+    Competitive tennis (prize winner at international and Russian tournaments) · academic vocal training (2018) · alpine skiing · classical literature · running · Sber ambassador.
+  </div>
+</section>
+
+</body>
+</html>

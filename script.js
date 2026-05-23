@@ -236,6 +236,11 @@ function applyLang(lang) {
     title.textContent =
       norm === "ru" && TRANSLATIONS_RU[key] ? TRANSLATIONS_RU[key] : title.dataset.en;
   }
+  // Language-aware href (e.g. CV link)
+  document.querySelectorAll("[data-href-ru]").forEach((el) => {
+    if (!el.dataset.hrefEn) el.dataset.hrefEn = el.getAttribute("href") || "";
+    el.setAttribute("href", norm === "ru" ? el.dataset.hrefRu : el.dataset.hrefEn);
+  });
   document.querySelectorAll("[data-lang-toggle]").forEach((btn) => {
     btn.textContent = norm === "en" ? "ru" : "en";
     btn.setAttribute("aria-label", norm === "en" ? "Switch to Russian" : "Switch to English");
