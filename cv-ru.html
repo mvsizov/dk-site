@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
   rel="stylesheet"
 />
 <style>
@@ -16,122 +16,123 @@
     --line: #e6ebf1;
     --line-strong: #d5dbe5;
   }
-  @page { size: A4; margin: 14mm 14mm; }
+  @page { size: A4; margin: 8mm 11mm; }
   * { box-sizing: border-box; }
   html, body {
     background: #fff;
     margin: 0;
     padding: 0;
     color: var(--ink);
-    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 9.5pt;
-    line-height: 1.45;
+    font-family: 'Onest', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 8.2pt;
+    line-height: 1.27;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-  .accent-bar { height: 3px; background: var(--ink); width: 64px; margin: 0 0 14px 0; }
+  .accent-bar { height: 3px; background: var(--ink); width: 56px; margin: 0 0 8px 0; }
   header.cv {
-    margin-bottom: 18px;
-    padding-bottom: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
     border-bottom: 1px solid var(--line);
   }
   .cv-name {
-    font-size: 28pt;
+    font-size: 24pt;
     font-weight: 700;
-    letter-spacing: -0.01em;
-    line-height: 1.05;
-    margin: 0 0 4px 0;
+    letter-spacing: -0.015em;
+    line-height: 1.0;
+    margin: 0 0 2px 0;
   }
   .cv-tagline {
-    font-size: 11pt;
+    font-size: 10pt;
     color: var(--muted);
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
   .cv-contacts {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px 18px;
+    gap: 3px 16px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 8.5pt;
+    font-size: 7.8pt;
     color: var(--ink);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
   }
-  .cv-contacts .label {
-    color: var(--muted);
-    margin-right: 4px;
-  }
-  section.cv-section { margin-top: 16px; }
+  .cv-contacts .label { color: var(--muted); margin-right: 4px; }
+
+  section.cv-section { margin-top: 6px; }
   h2.cv-section-title {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 8.5pt;
+    font-size: 7.6pt;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.13em;
     color: var(--muted);
-    margin: 0 0 10px 0;
-    padding-bottom: 4px;
+    margin: 0 0 5px 0;
+    padding-bottom: 2px;
     border-bottom: 1px solid var(--line);
     font-weight: 500;
   }
+
   .cv-item {
     display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 14px;
-    margin-bottom: 12px;
+    grid-template-columns: 96px 1fr;
+    gap: 12px;
+    margin-bottom: 5px;
     page-break-inside: avoid;
   }
   .cv-period {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 8pt;
+    font-size: 7.2pt;
     color: var(--muted);
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding-top: 2px;
+    letter-spacing: 0.07em;
+    padding-top: 1px;
   }
   .cv-company {
-    font-size: 11pt;
+    font-size: 10pt;
     font-weight: 600;
-    margin-bottom: 1px;
+    margin: 0 0 1px 0;
   }
   .cv-role {
-    font-size: 9.5pt;
+    font-size: 8.6pt;
     color: var(--ink);
     font-weight: 500;
-    margin: 2px 0 4px 0;
+    margin: 1px 0 2px 0;
   }
   .cv-sub-period {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 7.5pt;
+    font-size: 6.8pt;
     color: var(--muted);
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 3px;
+    letter-spacing: 0.07em;
+    margin: 0 0 2px 0;
   }
   ul.cv-bullets {
-    margin: 4px 0 6px 0;
-    padding-left: 14px;
+    margin: 1px 0 2px 0;
+    padding-left: 12px;
   }
   ul.cv-bullets li {
-    margin-bottom: 2px;
-    font-size: 9.2pt;
+    margin-bottom: 0;
+    font-size: 7.9pt;
+    line-height: 1.25;
   }
-  .cv-role-block { margin-bottom: 8px; }
+  .cv-role-block { margin-bottom: 5px; }
   .cv-role-block:last-child { margin-bottom: 0; }
+
   .cv-skills-grid {
     display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 14px;
-    margin-bottom: 6px;
+    grid-template-columns: 96px 1fr;
+    gap: 12px;
+    margin-bottom: 3px;
   }
   .cv-skills-grid .label {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 8pt;
+    font-size: 7.2pt;
     color: var(--muted);
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding-top: 2px;
+    letter-spacing: 0.07em;
+    padding-top: 1px;
   }
-  .cv-interests { font-size: 9.5pt; }
+  .cv-interests { font-size: 8.6pt; }
 </style>
 </head>
 <body>
@@ -156,13 +157,14 @@
       <div class="cv-company">АО «Сбер»</div>
       <div class="cv-role">Бизнес-аналитик — Управление операционных рисков, команда «Риски Технологий»</div>
       <ul class="cv-bullets">
-        <li>Анализ технологических ИТ-инцидентов и инцидентов операционного риска: выявление причин и расследования, работа в Service Manager.</li>
-        <li>Формирование бизнес-требований к системам, описание бизнес-процессов; понимание продуктового цикла.</li>
-        <li>Релизный и производственный процесс, участие в построении управления изменениями.</li>
-        <li>Сбор потребностей внутренних пользователей; взаимодействие с кросс-функциональными командами (ИТ, продукт, бизнес).</li>
-        <li>Аналитика и координация проекта с AI-моделью («Сканер-моделей»).</li>
+        <li>Анализ технологических ИТ-инцидентов и инцидентов операционного риска, выявление причин и проведение расследований, работа с Service Manager.</li>
+        <li>Понимание продуктового цикла: формирование бизнес-требований к системам, описание бизнес-процессов.</li>
+        <li>Работа с релизным и производственным процессом, участие в построении процессов управления изменениями.</li>
+        <li>Опыт взаимодействия с внутренними пользователями и сбор их потребностей.</li>
+        <li>Проведение аналитики и координации работы в проекте с AI-моделью («Сканер-моделей»).</li>
         <li>Участие в выстраивании методологической базы нового вида риска — «Риск изменений».</li>
-        <li>Jira / Confluence для постановки задач, документации и сопровождения проектов.</li>
+        <li>Взаимодействие с кросс-функциональными командами: ИТ, продукт, бизнес.</li>
+        <li>Работа с Jira и Confluence для постановки задач, ведения документации и сопровождения проектов.</li>
       </ul>
     </div>
   </div>
@@ -173,9 +175,9 @@
       <div class="cv-company">АО «ГТЛК»</div>
       <div class="cv-role">Главный специалист — Дирекция по управлению рисками</div>
       <ul class="cv-bullets">
-        <li>Управление проектными рисками государственных программ развития лизинга: реестр рисков, оценка проектных рисков, контроль выполнения минимизирующих и контрольных мероприятий.</li>
-        <li>Оценка кредитного риска: построение прогноза дебиторской задолженности по клиентам.</li>
-        <li>Оценка финансовых рисков: достаточность средств для исполнения государственных программ.</li>
+        <li>Управление проектными рисками государственных программ развития лизинга: создание и ведение реестра рисков, оценка проектных рисков, актуализация и контроль выполнения минимизирующих и контрольных мероприятий.</li>
+        <li>Оценка кредитного риска в части построения прогноза дебиторской задолженности по клиентам.</li>
+        <li>Оценка финансовых рисков в части достаточности средств для исполнения государственных программ.</li>
       </ul>
     </div>
   </div>
@@ -190,8 +192,8 @@
         <div class="cv-sub-period">Июл 2022 — Июл 2023 · 1 г</div>
         <ul class="cv-bullets">
           <li>Утверждение результатов Business Impact Analysis (BIA) на Комитете по рискам по всем подразделениям.</li>
-          <li>Расследование инцидентов непрерывности деятельности / ИТ / ИБ, событий операционного риска, работа с рисками.</li>
-          <li>Анализ требований Банка России по операционной надёжности; подготовка отчётов о технических сбоях.</li>
+          <li>Расследование инцидентов непрерывности деятельности / ИТ / ИБ, событий операционных рисков, работа с рисками.</li>
+          <li>Анализ требований Банка России по обеспечению операционной надёжности, подготовка отчётов по информированию Банка России о технических сбоях.</li>
         </ul>
       </div>
 
@@ -199,10 +201,10 @@
         <div class="cv-role">Стажёр-специалист — Операционные риски (ДОМ.РФ)</div>
         <div class="cv-sub-period">Апр 2022 — Июл 2022 · 4 мес</div>
         <ul class="cv-bullets">
-          <li>Обработка массива данных: план закупок, режимы работы сотрудников, критичные доступы.</li>
+          <li>Обработка массива данных: анализ плана закупок, режимов работы сотрудников, критичных доступов сотрудников.</li>
           <li>Анализ положений Банка России по операционной надёжности (716-П, 787-П, 779-П).</li>
-          <li>Подготовка данных для BIA — анализ более 600 бизнес-процессов.</li>
-          <li>Анализ инцидентов ИБ на соответствие требованиям операционного риска.</li>
+          <li>Подготовка данных для проведения Business Impact Analysis (BIA) в компании (анализ более 600 бизнес-процессов).</li>
+          <li>Анализ инцидентов ИБ на соответствие требованиям события операционного риска.</li>
         </ul>
       </div>
     </div>
@@ -217,9 +219,9 @@
         <div class="cv-role">Private Equity Analyst — Milestone Capital</div>
         <div class="cv-sub-period">Ноя 2021 — Мар 2022</div>
         <ul class="cv-bullets">
-          <li>Работа с базами данных при анализе компаний; фокус на бизнесы с recurring revenue.</li>
+          <li>Работа с базами данных при анализе компаний, фокус на поиск бизнесов с recurring revenue.</li>
           <li>Подготовка тизеров и кратких обзоров CIM.</li>
-          <li>Анализ финансовой отчётности, построение финансовой модели, отраслевые исследования.</li>
+          <li>Анализ финансовой отчётности, построение финансовой модели, проведение отраслевых исследований.</li>
         </ul>
       </div>
 
@@ -255,16 +257,14 @@
 <section class="cv-section">
   <h2 class="cv-section-title">Исследования и программы</h2>
   <ul class="cv-bullets">
-    <li>Публикация — «Влияние пандемии на авиационную сферу в разрезе лизинга воздушных судов на примере ГТЛК».</li>
-    <li>Публикация — «Реализация ипотечного потенциала в монетарную цифровую эпоху».</li>
-    <li>Публикация — «Конвергенция страховых и банковских продуктов».</li>
     <li>Школа управления рисками ВТБ (ШУР) · образовательная программа КПМГ «Audit Week Online».</li>
+    <li>Публикации — «Влияние пандемии на авиационную сферу в разрезе лизинга воздушных судов на примере ГТЛК»; «Реализация ипотечного потенциала в монетарную цифровую эпоху»; «Конвергенция страховых и банковских продуктов».</li>
     <li>Changellenge The Cup of Moscow, Russia 2020 — диплом «ТОП-25% лучших работ».</li>
   </ul>
 </section>
 
 <section class="cv-section">
-  <h2 class="cv-section-title">Навыки и языки</h2>
+  <h2 class="cv-section-title">Навыки, языки и интересы</h2>
   <div class="cv-skills-grid">
     <div class="label">инструменты</div>
     <div>Jira · Confluence · SQL · описание бизнес-процессов · работа с инцидентами · управление изменениями · базовые знания об архитектуре моделей и ИТ-систем · product mindset · системное мышление.</div>
@@ -273,12 +273,9 @@
     <div class="label">языки</div>
     <div>Русский — родной · английский — B1 (Intermediate).</div>
   </div>
-</section>
-
-<section class="cv-section">
-  <h2 class="cv-section-title">Интересы</h2>
-  <div class="cv-interests">
-    Большой теннис (призёр международных и российских соревнований) · академический вокал (2018) · горные лыжи · классическая литература · бег · амбассадор Сбера.
+  <div class="cv-skills-grid">
+    <div class="label">интересы</div>
+    <div>Большой теннис (призёр международных и российских соревнований) · академический вокал (2018) · горные лыжи · классическая литература · бег · амбассадор Сбера.</div>
   </div>
 </section>
 
